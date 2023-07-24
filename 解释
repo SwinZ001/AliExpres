@@ -1,3 +1,6 @@
+主要是处理速卖通账号注册脚本，其中验证码是通过打开邮箱网址获取的
+
+
 用到undetected_chromedriver.v2和chromedriver不同
 undetected_chromedriver.v2会自己下载驱动插件，但是运行会很慢，需要运行一次后去对应目录取到chromedriver
 然后ctrl+鼠标点击import undetected_chromedriver.v2的包进入包内修改对应路径：
