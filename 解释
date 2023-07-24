@@ -1,0 +1,9 @@
+用到undetected_chromedriver.v2和chromedriver不同
+undetected_chromedriver.v2会自己下载驱动插件，但是运行会很慢，需要运行一次后去对应目录取到chromedriver
+然后ctrl+鼠标点击import undetected_chromedriver.v2的包进入包内修改对应路径：
+driver_executable_path = r'D:\develop\python\python\Scripts\099dcc21ca8d267b_chromedriver.exe'//对应目录路径取得的chromedriver
+        patcher = Patcher(
+            executable_path=driver_executable_path,
+            force=patcher_force_close,
+            version_main=version_main,
+        )
