@@ -26,6 +26,9 @@ class Ali_Express_Register():
     # 浏览器设置
     def chrome_set(self):
         chrome_options = uc.ChromeOptions()
+        # 浏览器不显示!!!!!!!在无头浏览器设置后面的chrome_options设置不可以加--，不然会出错；或者直接添加个不必要空格chrome_options.add_argument(' ')
+        chrome_options.add_argument('--headless')
+        chrome_options.add_argument(' ')
         # --禁用扩展
         chrome_options.add_argument("--disable-extensions")
         # # --禁用弹出窗口阻止
